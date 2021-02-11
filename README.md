@@ -42,8 +42,8 @@ Large devices | No
 
 &nbsp;
 ### Api Referenced:
-https://disease.sh/v3/covid-19/all (Overall Covid-19 Cases and Deaths)
-https://api.apify.com/v2/key-value-stores/yaPbKe9e5Et61bl7W/records/LATEST?disableRedirect=true (Singapore Covid-19 Data)
+1. https://disease.sh/v3/covid-19/all (Overall Covid-19 Cases and Deaths)
+2. https://api.apify.com/v2/key-value-stores/yaPbKe9e5Et61bl7W/records/LATEST?disableRedirect=true (Singapore Covid-19 Data)
 
 &nbsp;
 ### Pictures from sites used:
