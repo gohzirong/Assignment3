@@ -31,9 +31,10 @@
                   We intent to spread awareness on Covid-19 through a brief lesson and quiz about the virus. We have also consolidated some data on Covid-19 showing how deadly the virus is.
                 </p>
                 <br>
-                <a href="" class="mt-auto btn btn-primary">Click here to get started!</a>
+                <a href="" class="mt-auto btn btn-danger">Click here to start lesson!</a>
               </div>
             </div>
+            
             <!-- Carousel start -->
             <div class="col-md-5">
               <div id="CarouselTest" class="carousel slide" data-ride="carousel">
@@ -68,9 +69,34 @@
         </div>
       </div>
     </div>
-	
-    <canvas id="bar-chart1" height="100px"></canvas>
     
+    <div id="text-data" class="card-group">
+      <div class="card bg-danger text-white">
+        <div class="card-header">Total Confirmed Cases</div>
+        <div id="totalcases" class="card-body">Number</div> 
+      </div>
+      <div class="card bg-danger text-white">
+        <div class="card-header">Total Confirmed Deaths</div>
+        <div id="totaldeaths" class="card-body">Number</div> 
+      </div>
+    </div>
+
+    <div class="main-title">Basic Charts On Covid-19</div>
+
+    <div class="row justify-content-center">
+      <div class="col-8">
+        <canvas id="bar-chart1" height="100px"></canvas>
+      </div>    
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-8">
+        <canvas id="bar-chart2" height="100px"></canvas>
+      </div>    
+    </div>
+    
+    <button type="button" class="btn btn-primary btn-danger btn-block">Click here to start lesson!</button>
+
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 
