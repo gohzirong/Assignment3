@@ -24,13 +24,18 @@
 ### Potential Additions:
 Potential Additions | Progress | Done?
 ------------ | ------------ | ------------- | 
-Introduction page | 50% | No 
-Api Implementation | - | No
-Charts on Covid-19 Data | 20% | No 
+Introduction page | - | Yes
+Api Implementation | - | Yes
+Charts on Covid-19 Data | - | Yes
 Lesson Slideshow | - | No 
 Quiz Page | - | No
 Lottie Animations | - | No
 Storing Quiz Marks | - | No
+
+&nbsp;
+### Visual Animations:
+1. Reveal
+2. Glow
 
 &nbsp;
 ### Website Responsiveness:
@@ -49,10 +54,10 @@ Large devices | No
 ### Pictures from sites used:
 Pictures | Links
 ------------ | ------------- |
-Covid-19 Logo | 
-Crowded Image |
-Patient Image | 
-Damaged Lungs Image | 
+Covid-19 Logo | https://cdn.pixabay.com/photo/2020/04/10/08/42/coronavirus-5024649_1280.png
+Crowded Image | https://images.theconversation.com/files/322030/original/file-20200320-22590-1rocvnk.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=1200.0&fit=crop
+Patient Image | https://ca-times.brightspotcdn.com/dims4/default/a2a156f/2147483647/strip/true/crop/2400x1600+0+0/resize/1486x991!/quality/90/?url=https://california-times-brightspot.s3.amazonaws.com/ef/c8/92cbe3094887979fb201bf66b37f/la-photos-1staff-530871-me-0425-covid-19-patient-009.IK.jpg
+Damaged Lungs Image | https://2rdnmg1qbg403gumla1v9i2h-wpengine.netdna-ssl.com/wp-content/uploads/sites/3/2020/03/caronavirusLungs-125957837-770x533-1-650x428.jpg
 
 &nbsp;
 ### Sources used:
