@@ -1,10 +1,17 @@
+/* Page Colour */
 body{
-    background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5b43f994-9aa9-440b-b5ba-215847ef12d0/d2j98ao-ddb75044-e751-4626-bb6a-278568177ae4.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvNWI0M2Y5OTQtOWFhOS00NDBiLWI1YmEtMjE1ODQ3ZWYxMmQwXC9kMmo5OGFvLWRkYjc1MDQ0LWU3NTEtNDYyNi1iYjZhLTI3ODU2ODE3N2FlNC5qcGcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.1SNicRPI1DttASy8qb4gJMWsh85mp_MO4liRwaTP82k");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100% 100%;
+  background-color: #ffcccb;
 }
 
+/* Top Container Image */
+.top-container{
+  background-image: url(https://www.asgam.com/wp-content/uploads/2020/08/covid-19.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+/* Top Container Logo */
 img.picture1 {
   width:30px;
   height:30px;
@@ -39,6 +46,7 @@ img.d-block {
   margin-top:20px;
 }
 
+/* Carousel */
 .carousel-indicators li {
   border-radius: 12px;
   width: 12px;
@@ -56,4 +64,44 @@ img.d-block {
 .btn {
 margin-top: auto;
 transition: 2s;
+}
+
+/* 2x2 Box */
+#text-data {
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 50px;
+  text-align: center;
+  animation: glow 2500ms linear infinite 2000ms;
+}
+
+@keyframes glow {
+    80% {
+    text-shadow: 0 0 8px #ffffff;
+    }
+}
+
+/* Title */
+.main-title {
+  margin-bottom: 10px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  background: 50% 100% / 50% 50% no-repeat
+              radial-gradient(ellipse at bottom,#e25c5c, transparent, transparent);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 4vw;
+  font-family: "Source Sans Pro", sans-serif;
+  animation: reveal 4000ms ease-in-out forwards 200ms;
+}
+
+@keyframes reveal {
+  70%{
+  letter-spacing: 7px;
+  }
+  100% {
+  background-size: 300% 300%;
+  }
 }
