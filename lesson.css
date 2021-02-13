@@ -1,26 +1,6 @@
- /* Navigation*/
-.navbar {
-background-color: transparent;
-}
-.scrolling-navbar {
-transition: background .5s ease-in-out, padding .5s ease-in-out;
-}
-.top-nav-collapse {
-background-color: #667490;
-}
-footer.page-footer {
-background-color: #667490;
-}
-@media only screen and (max-width: 768px) {
-.navbar {
-    background-color: #667490;
-}
-}
-
-/* Necessary for full page carousel*/
+ /* Necessary for full page carousel*/
 html,
-body,
-.view {
+body {
 height: 100%;
 }
 
@@ -33,33 +13,145 @@ height: 100%;
 .carousel-inner {
 height: 100%;
 }
-.carousel-item:nth-child(1) {
-background-image: url("https://mdbootstrap.com/img/Photos/Others/images/76.jpg");
-background-repeat: no-repeat;
-background-size: cover;
-background-position: center center;
-}
-.carousel-item:nth-child(2) {
-background-image: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/30.jpg");
-background-repeat: no-repeat;
-background-size: cover;
-background-position: center center;
-}
-.carousel-item:nth-child(3) {
-background-image: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/img%20(10).jpg");
-background-repeat: no-repeat;
-background-size: cover;
-background-position: center center;
-}
 
-.item{
+.item {
     height: 500px;
 }
 
-#header{
+#header {
     text-align: center;
 }
 
-html {
+body {
     background-color: red;
+}
+
+#mainheader {
+    top: 0.1%;
+    background: linear-gradient(to right,#80ab09 10%, #ebe83f 50%, #d47013 60%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 1.5s linear infinite;
+    display: inline-block;
+}
+
+/* Text animation */
+@keyframes textclip {
+	to {
+		background-position: 200% center;
+	}
+}
+
+/* Arranging text/pictures */
+#slide1text {
+    top: 25%;
+    font-size: 25px;
+}
+
+#slide2text {
+    top: 28%;
+    font-size: 20px;
+}
+
+#slide2pic1 {
+    top: 0.1%;
+    left: 5%;
+}
+
+#slide2pic2 {
+    top: 55%;
+    left: 83%;
+}
+
+#slide3text {
+    top: 20%;
+    font-size: 19px;
+}
+
+#slide3pic1 {
+    top: 26%;
+    left: 11%;
+}
+
+#slide3pic2 {
+    top: 26%;
+    left: 73%;
+}
+
+#slide4text {
+    top: 25%;
+    font-size: 25px;
+}
+
+#slide4pic1 {
+    top: 0.1%;
+    left: 5%;
+}
+
+#slide4pic2 {
+    top: 0.1%;
+    left: 80%;
+}
+
+#slide5text {
+    top: 22%;
+    font-size: 25px;
+}
+
+#slide5pic1 {
+    top: 42%;
+    left: 11%;
+}
+
+#slide5pic2 {
+    top: 42%;
+    left: 73%;
+}
+
+#slide6text {
+    top: 22%;
+    font-size: 25px;
+}
+
+#slide6pic1 {
+    top: 2%;
+    left: 10%;
+}
+
+#slide6pic2 {
+    top: 2%;
+    left: 70%;
+}
+
+/* Slide 6 text animations */
+.neon {
+    font-family: neon;
+    color: #FB4264;
+    font-size: 50px;
+    text-shadow: 0 0 3vw #F40A35;
+    animation: neon 1s ease infinite;
+    -moz-animation: neon 1s ease infinite;
+    -webkit-animation: neon 1s ease infinite;
+}
+
+@keyframes neon {
+    0%,
+    100% {
+      text-shadow: 0 0 1vw #FA1C16, 0 0 3vw #FA1C16, 0 0 10vw #FA1C16, 0 0 10vw #FA1C16, 0 0 .4vw #FED128, .5vw .5vw .1vw #806914;
+      color: #FED128;
+    }
+    50% {
+      text-shadow: 0 0 .5vw #800E0B, 0 0 1.5vw #800E0B, 0 0 5vw #800E0B, 0 0 5vw #800E0B, 0 0 .2vw #800E0B, .5vw .5vw .1vw #40340A;
+      color: #806914;
+    }
+}
+
+/* Button */
+.btn {
+    height: 47px;
 }
