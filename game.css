@@ -1,0 +1,92 @@
+#snakeboard {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+body {
+    background-color: rgb(28, 78, 172);
+}
+
+#background {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 50%;
+    height: 100%;
+    background-color: rgb(167, 36, 57);
+    z-index: -1;
+}
+
+/* carousel */
+ /* Necessary for full page carousel*/
+ html,
+ body {
+ height: 100%;
+ overflow-y: hidden;
+ }
+ 
+ /* Carousel*/
+ .carousel,
+ .carousel-item,
+ .carousel-item.active {
+ height: 100%;
+ }
+ .carousel-inner {
+ height: 100%;
+ }
+ 
+ .item {
+     height: 500px;
+ }
+ 
+ #header {
+     text-align: center;
+ }
+ 
+ #mainheader {
+    top: -5%;
+    font-family: neon;
+    color: #426DFB;
+    font-size: 9vw;
+    line-height: 9vw;
+    text-shadow: 0 0 3vw #2356FF;
+    animation: flux 2s linear infinite;
+    -moz-animation: flux 2s linear infinite;
+    -webkit-animation: flux 2s linear infinite;
+    -o-animation: flux 2s linear infinite;
+ }
+
+@keyframes flux {
+    0%,
+    100% {
+      text-shadow: 0 0 1vw #1041FF, 0 0 3vw #1041FF, 0 0 10vw #1041FF, 0 0 10vw #1041FF, 0 0 .4vw #8BFDFE, .5vw .5vw .1vw #147280;
+      color: #28D7FE;
+    }
+    50% {
+      text-shadow: 0 0 .5vw #082180, 0 0 1.5vw #082180, 0 0 5vw #082180, 0 0 5vw #082180, 0 0 .2vw #082180, .5vw .5vw .1vw #0A3940;
+      color: #146C80;
+    }
+}
+#slide1text {
+    top:20%;
+}
+
+#slide1pic1 {
+    top: 10%;
+    left: 5%;
+}
+
+#slide1pic2 {
+    top: 13%;
+    left: 70%;
+}
+
+#slide1 {
+    background: darkcyan;
+}
+
+canvas {
+    border: 2px solid rgb(151, 149, 149);
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="normalize.css" type="text/css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="game.css" type="text/css"/>
+  </head>
+
+  <body>
+    <h3 id="header">Games</h3>
+    <div class="container">
+        <div id="myCarousel" class="carousel slide" data-interval="false">
+      
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+      
+            <div id="slide1" class="item active">
+                <div id="background"></div>
+              <div id="mainheader" class="carousel-caption">
+                <h2>Humans eat virus</h2>
+                <h4>Eat all the viruses to win!</h4>
+                <h5>Please click on the game to play. Rule: Don't touch the sides!</h5>
+              </div>
+                <div id="slide1text" class="carousel-caption">
+                    <canvas id="stage" height="350" width="400"></canvas>
+                </div>
+                <div id="slide1pic1" class="carousel-caption">
+                    <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_VWOntT.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
+                </div>
+                <div id="slide1pic2" class="carousel-caption">
+                    <lottie-player src="https://assets9.lottiefiles.com/datafiles/VjQUAk8lvArxYIR/data.json"  background="transparent"  speed="0.5"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
+                </div>
+            </div>
+      
+            <div class="item">
+              <div id="mainheader" class="carousel-caption">
+                <h3>Lesson 1</h3>
+                <h4>Why is Covid-19 important?</h4>
+              </div>
+              
+            </div>
+      
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+
+    <script src="game.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </body>
+</html>
