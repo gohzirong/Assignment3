@@ -32,6 +32,7 @@ Lesson Slideshow | - | Yes
 Quiz Page | - | No
 Lottie Animations | - | No
 Storing Quiz Marks | - | No
+Game page | 50% | No
 
 &nbsp;
 ### Visual Animations:
@@ -40,6 +41,7 @@ Storing Quiz Marks | - | No
 3. Text Shadow
 4. Neon
 5. Textclip
+6. Flux
 
 &nbsp;
 ### Website Responsiveness:
@@ -71,3 +73,4 @@ Sources | Links
 Neon text effect | https://codemyui.com/glowing-flicker-neon-text-effect/
 Covid-19 information | https://www.ucihealth.org/blog/2020/04/why-is-covid19-so-dangerous#:~:text=The%20virus%20that%20causes%20COVID,40%25%20of%20cases%2C%20respectively
 Carousel | https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_carousel2&stacked=h
+Snake game | https://codepen.io/CaioPaiola/pen/GFpuK
