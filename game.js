@@ -1,13 +1,9 @@
-/**
- * Namespace
- */
+/* Snake game */
 var Game      = Game      || {};
 var Keyboard  = Keyboard  || {}; 
 var Component = Component || {};
 
-/**
- * Keyboard Map
- */
+/* Keyboard Map */
 Keyboard.Keymap = {
   37: 'left',
   38: 'up',
@@ -15,32 +11,24 @@ Keyboard.Keymap = {
   40: 'down'
 };
 
-/**
- * Keyboard Events
- */
+/* Keyboard Events */
 Keyboard.ControllerEvents = function() {
-  
   // Setts
   var self      = this;
   this.pressKey = null;
   this.keymap   = Keyboard.Keymap;
-  
   // Keydown Event
   document.onkeydown = function(event) {
     self.pressKey = event.which;
   };
-  
   // Get Key
   this.getKey = function() {
     return this.keymap[this.pressKey];
   };
 };
 
-/**
- * Game Component Stage
- */
+/* Game Component Stage */
 Component.Stage = function(canvas, conf) {  
-  
   // Sets
   this.keyEvent  = new Keyboard.ControllerEvents();
   this.width     = canvas.width;
@@ -55,7 +43,6 @@ Component.Stage = function(canvas, conf) {
     fps  : 1000
   };
   
-  // Merge Conf
   if (typeof conf == 'object') {
     for (var key in conf) {
       if (conf.hasOwnProperty(key)) {
@@ -63,25 +50,18 @@ Component.Stage = function(canvas, conf) {
       }
     }
   }
-  
 };
 
-/**
- * Game Component Snake
- */
+/* Game Component Snake */
 Component.Snake = function(canvas, conf) {
-  
-  // Game Stage
+   // Game Stage
   this.stage = new Component.Stage(canvas, conf);
   
-  // Init Snake
   this.initSnake = function() {
     
-    // Itaration in Snake Conf Size
-    for (var i = 0; i < this.stage.conf.size; i++) {
-      
-      // Add Snake Cells
-      this.stage.length.push({x: i, y:0});
+  for (var i = 0; i < this.stage.conf.size; i++) {
+    // Add Snake Cells
+    this.stage.length.push({x: i, y:0});
 		}
 	};
   
@@ -113,11 +93,8 @@ Component.Snake = function(canvas, conf) {
   };
 };
 
-/**
- * Game Draw
- */
+/* Game Draw */
 Game.Draw = function(context, snake) {
-  
   // Draw Stage
   this.drawStage = function() {
     
@@ -200,11 +177,8 @@ Game.Draw = function(context, snake) {
 };
 
 
-/**
- * Game Snake
- */
+/* Game Snake */
 Game.Snake = function(elementId, conf) {
-  
   // Sets
   var canvas   = document.getElementById(elementId);
   var context  = canvas.getContext("2d");
@@ -216,13 +190,176 @@ Game.Snake = function(elementId, conf) {
 };
 
 
-/**
- * Window Load
- */
+/* Window Load */
 window.onload = function() {
   var snake = new Game.Snake('stage', {fps: 100, size: 4});
 };
 
-$('.carousel').carousel({
-    interval: false,
-});
+/* Game 2 */
+var canvas2 = document.getElementById("myCanvas");
+var ctx2 = canvas2.getContext("2d");
+var ballRadius = 10;
+var x = canvas2.width/2;
+var y = canvas2.height-30;
+var dx = 2;
+var dy = -2;
+var paddleHeight = 10;
+var paddleWidth = 75;
+var paddleX = (canvas2.width-paddleWidth)/2;
+var rightPressed = false;
+var leftPressed = false;
+var brickRowCount = 5;
+var brickColumnCount = 3;
+var brickWidth = 75;
+var brickHeight = 20;
+var brickPadding = 10;
+var brickOffsetTop = 30;
+var brickOffsetLeft = 30;
+var score = 0;
+var lives = 3;
+
+var bricks = [];
+for(var c=0; c<brickColumnCount; c++) {
+  bricks[c] = [];
+  for(var r=0; r<brickRowCount; r++) {
+    bricks[c][r] = { x: 0, y: 0, status: 1 };
+  }
+}
+
+document.addEventListener("keydown", keyDownHandler, false);
+document.addEventListener("keyup", keyUpHandler, false);
+document.addEventListener("mousemove", mouseMoveHandler, false);
+
+function keyDownHandler(e) {
+    if(e.key == "Right" || e.key == "ArrowRight") {
+        rightPressed = true;
+    }
+    else if(e.key == "Left" || e.key == "ArrowLeft") {
+        leftPressed = true;
+    }
+}
+
+function keyUpHandler(e) {
+    if(e.key == "Right" || e.key == "ArrowRight") {
+        rightPressed = false;
+    }
+    else if(e.key == "Left" || e.key == "ArrowLeft") {
+        leftPressed = false;
+    }
+}
+
+function mouseMoveHandler(e) {
+  var relativeX = e.clientX - canvas2.offsetLeft;
+  if(relativeX > 0 && relativeX < canvas2.width) {
+    paddleX = relativeX - paddleWidth/2;
+  }
+}
+function collisionDetection() {
+  for(var c=0; c<brickColumnCount; c++) {
+    for(var r=0; r<brickRowCount; r++) {
+      var b = bricks[c][r];
+      if(b.status == 1) {
+        if(x > b.x && x < b.x+brickWidth && y > b.y && y < b.y+brickHeight) {
+          dy = -dy;
+          b.status = 0;
+          score++;
+          if(score == brickRowCount*brickColumnCount) {
+            alert("YOU WIN, CONGRATS!");
+            document.location.reload();
+          }
+        }
+      }
+    }
+  }
+}
+
+function drawBall() {
+  ctx2.beginPath();
+  ctx2.arc(x, y, ballRadius, 0, Math.PI*2);
+  ctx2.fillStyle = "#0095DD";
+  ctx2.fill();
+  ctx2.closePath();
+}
+function drawPaddle() {
+  ctx2.beginPath();
+  ctx2.rect(paddleX, canvas2.height-paddleHeight, paddleWidth, paddleHeight);
+  ctx2.fillStyle = "#0095DD";
+  ctx2.fill();
+  ctx2.closePath();
+}
+function drawBricks() {
+  for(var c=0; c<brickColumnCount; c++) {
+    for(var r=0; r<brickRowCount; r++) {
+      if(bricks[c][r].status == 1) {
+        var brickX = (r*(brickWidth+brickPadding))+brickOffsetLeft;
+        var brickY = (c*(brickHeight+brickPadding))+brickOffsetTop;
+        bricks[c][r].x = brickX;
+        bricks[c][r].y = brickY;
+        ctx2.beginPath();
+        ctx2.rect(brickX, brickY, brickWidth, brickHeight);
+        ctx2.fillStyle = "#0095DD";
+        ctx2.fill();
+        ctx2.closePath();
+      }
+    }
+  }
+}
+function drawScore() {
+  ctx2.font = "16px Arial";
+  ctx2.fillStyle = "#0095DD";
+  ctx2.fillText("Score: "+score, 8, 20);
+}
+function drawLives() {
+  ctx2.font = "16px Arial";
+  ctx2.fillStyle = "#0095DD";
+  ctx2.fillText("Lives: "+lives, canvas2.width-65, 20);
+}
+
+function draw() {
+  ctx2.clearRect(0, 0, canvas2.width, canvas2.height);
+  drawBricks();
+  drawBall();
+  drawPaddle();
+  drawScore();
+  drawLives();
+  collisionDetection();
+
+  if(x + dx > canvas2.width-ballRadius || x + dx < ballRadius) {
+    dx = -dx;
+  }
+  if(y + dy < ballRadius) {
+    dy = -dy;
+  }
+  else if(y + dy > canvas2.height-ballRadius) {
+    if(x > paddleX && x < paddleX + paddleWidth) {
+      dy = -dy;
+    }
+    else {
+      lives--;
+      if(!lives) {
+        alert("GAME OVER");
+        document.location.reload();
+      }
+      else {
+        x = canvas2.width/2;
+        y = canvas2.height-30;
+        dx = 3;
+        dy = -3;
+        paddleX = (canvas2.width-paddleWidth)/2;
+      }
+    }
+  }
+
+  if(rightPressed && paddleX < canvas2.width-paddleWidth) {
+    paddleX += 7;
+  }
+  else if(leftPressed && paddleX > 0) {
+    paddleX -= 7;
+  }
+
+  x += dx;
+  y += dy;
+  requestAnimationFrame(draw);
+}
+
+draw();
