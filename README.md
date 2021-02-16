@@ -29,7 +29,7 @@ Introduction page | - | Yes
 Api Implementation | - | Yes
 Charts on Covid-19 Data | - | Yes
 Lesson Slideshow | - | Yes
-Quiz Page | - | No
+Quiz Page | 70% | No
 Lottie Animations | - | No
 Storing Quiz Marks | - | No
 Game page | - | Yes
