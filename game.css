@@ -81,11 +81,15 @@ body {
 #slide1pic1 {
     top: 10%;
     left: 5%;
+    width: 300px;
+    height: 300px;
 }
 
 #slide1pic2 {
     top: 13%;
     left: 70%;
+    width: 300px;
+    height: 300px;
 }
 
 #slide1,#slide2 {
@@ -94,14 +98,112 @@ body {
 
 #slide2pic1 {
     top: 10%;
-    left: 5%;
+    left: 2%;
+    width: 200px;
+    height: 320px;
 }
 
 #slide2pic2 {
     top: 10%;
     left: 70%;
+    height: 320px;
+    width: 320px;
 }
 
 #myCanvas {
     background: #eee; 
+}
+
+/* Web responsiveness */
+/* Small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #slide1pic1 {
+        top: 0.1%;
+        left: 0%;
+        width: 130px;
+        height: 130px;
+    }
+    
+    #slide1pic2 {
+        top: 0.1%;
+        left: 77%;
+        width: 130px;
+        height: 130px;
+    }
+
+    #slide2pic1 {
+        top: -4%;
+        left: 3%;
+        width: 130px;
+        height: 130px;
+    }
+    
+    #slide2pic2 {
+        top: -2%;
+        left: 80%;
+        width: 130px;
+        height: 130px;
+    }
+}
+
+/* Medium devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+    #slide1pic1 {
+        top: 0.1%;
+        left: 0%;
+        width: 160px;
+        height: 160px;
+    }
+    
+    #slide1pic2 {
+        top: 0.1%;
+        left: 77%;
+        width: 150px;
+        height: 150px;
+    }
+
+    #slide2pic1 {
+        top: -4%;
+        left: 3%;
+        width: 150px;
+        height: 130px;
+    }
+    
+    #slide2pic2 {
+        top: -2%;
+        left: 80%;
+        width: 150px;
+        height: 150px;
+    }
+}
+
+/* Large devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    #slide1pic1 {
+        top: 0.1%;
+        left: 0%;
+        width: 160px;
+        height: 160px;
+    }
+    
+    #slide1pic2 {
+        top: 0.1%;
+        left: 77%;
+        width: 150px;
+        height: 150px;
+    }
+
+    #slide2pic1 {
+        top: -4%;
+        left: 3%;
+        width: 160px;
+        height: 135px;
+    }
+    
+    #slide2pic2 {
+        top: -2%;
+        left: 80%;
+        width: 160px;
+        height: 160px;
+    }
 }

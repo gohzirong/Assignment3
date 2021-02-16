@@ -60,12 +60,16 @@ body {
 
 #slide2pic1 {
     top: 0.1%;
-    left: 5%;
+    left: 2%;
+    height: 220px;
+    width: 220px;
 }
 
 #slide2pic2 {
     top: 55%;
-    left: 83%;
+    left: 79%;
+    height: 220px;
+    width: 220px;
 }
 
 #slide3text {
@@ -75,12 +79,16 @@ body {
 
 #slide3pic1 {
     top: 26%;
-    left: 11%;
+    left: 6%;
+    width: 230px;
+    height: 230px;
 }
 
 #slide3pic2 {
     top: 26%;
     left: 73%;
+    width: 230px;
+    height: 230px;
 }
 
 #slide4text {
@@ -90,12 +98,16 @@ body {
 
 #slide4pic1 {
     top: 0.1%;
-    left: 5%;
+    left: 2%;
+    width: 200px;
+    height: 200px;
 }
 
 #slide4pic2 {
-    top: 0.1%;
-    left: 80%;
+    top: -8%;
+    left: 73%;
+    width: 270px;
+    height: 270px;
 }
 
 #slide5text {
@@ -106,11 +118,15 @@ body {
 #slide5pic1 {
     top: 42%;
     left: 11%;
+    width: 200px;
+    height: 200px;
 }
 
 #slide5pic2 {
     top: 42%;
     left: 73%;
+    width: 210px;
+    height: 210px;
 }
 
 #slide6text {
@@ -120,12 +136,16 @@ body {
 
 #slide6pic1 {
     top: 2%;
-    left: 10%;
+    left: 3%;
+    width: 270px;
+    height: 270px;
 }
 
 #slide6pic2 {
     top: 2%;
     left: 70%;
+    width: 270px;
+    height: 270px;
 }
 
 /* Slide 6 text animations */
@@ -155,3 +175,223 @@ body {
 .btn {
     height: 47px;
 }
+
+/* Web responsiveness */
+/* Small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #slide2pic1 {
+        top: 0.1%;
+        left: 2%;
+        height: 140px;
+        width: 140px;
+    }
+    
+    #slide2pic2 {
+        top: 0.1%;
+        left: 71%;
+        height: 140px;
+        width: 140px;
+    }
+
+    #slide3pic1 {
+        top: 0.1%;
+        left: 2%;
+        width: 160px;
+        height: 160px;
+    }
+    
+    #slide3pic2 {
+        top: 0.1%;
+        left: 71%;
+        width: 160px;
+        height: 160px;
+    }
+
+    #slide4pic1 {
+        top: 0.1%;
+        left: 2%;
+        width: 140px;
+        height: 140px;
+    }
+    
+    #slide4pic2 {
+        top: -5%;
+        left: 65%;
+        width: 200px;
+        height: 200px;
+    }
+
+    #slide5pic1 {
+        top: 0.1%;
+        left: 5%;
+        width: 130px;
+        height: 130px;
+    }
+    
+    #slide5pic2 {
+        top: 0.1%;
+        left: 70%;
+        width: 130px;
+        height: 130px;
+    }
+
+    #slide6pic1 {
+        top: 2%;
+        left: 3%;
+        width: 150px;
+        height: 150px;
+    }
+    
+    #slide6pic2 {
+        top: 2%;
+        left: 70%;
+        width: 150px;
+        height: 150px;
+    }
+}
+  
+/* Medium devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+    #slide2pic1 {
+        top: 0.1%;
+        left: 2%;
+        height: 160px;
+        width: 160px;
+    }
+    
+    #slide2pic2 {
+        top: 0.1%;
+        left: 71%;
+        height: 160px;
+        width: 160px;
+    }
+
+    #slide3pic1 {
+        top: -5%;
+        left: 2%;
+        width: 180px;
+        height: 180px;
+    }
+    
+    #slide3pic2 {
+        top: -5%;
+        left: 71%;
+        width: 180px;
+        height: 180px;
+    }
+
+    #slide4pic1 {
+        top: 0.1%;
+        left: 7%;
+        width: 170px;
+        height: 170px;
+    }
+    
+    #slide4pic2 {
+        top: -5%;
+        left: 65%;
+        width: 220px;
+        height: 220px;
+    }
+
+    #slide5pic1 {
+        top: 0.1%;
+        left: 5%;
+        width: 150px;
+        height: 150px;
+    }
+    
+    #slide5pic2 {
+        top: 0.1%;
+        left: 70%;
+        width: 150px;
+        height: 150px;
+    }
+
+    #slide6pic1 {
+        top: 2%;
+        left: 3%;
+        width: 190px;
+        height: 190px;
+    }
+    
+    #slide6pic2 {
+        top: 2%;
+        left: 70%;
+        width: 190px;
+        height: 190px;
+    }
+}
+
+/* Large devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    #slide2pic1 {
+        top: 0.1%;
+        left: 2%;
+        height: 180px;
+        width: 180px;
+    }
+    
+    #slide2pic2 {
+        top: 0.1%;
+        left: 71%;
+        height: 180px;
+        width: 180px;
+    }
+
+    #slide3pic1 {
+        top: -5%;
+        left: 2%;
+        width: 180px;
+        height: 180px;
+    }
+    
+    #slide3pic2 {
+        top: -5%;
+        left: 71%;
+        width: 180px;
+        height: 180px;
+    }
+
+    #slide4pic1 {
+        top: 0.1%;
+        left: 7%;
+        width: 170px;
+        height: 170px;
+    }
+    
+    #slide4pic2 {
+        top: -5%;
+        left: 65%;
+        width: 220px;
+        height: 220px;
+    }
+
+    #slide5pic1 {
+        top: 0.1%;
+        left: 5%;
+        width: 170px;
+        height: 170px;
+    }
+    
+    #slide5pic2 {
+        top: 0.1%;
+        left: 70%;
+        width: 170px;
+        height: 170px;
+    }
+
+    #slide6pic1 {
+        top: 2%;
+        left: 3%;
+        width: 205px;
+        height: 205px;
+    }
+    
+    #slide6pic2 {
+        top: 2%;
+        left: 70%;
+        width: 205px;
+        height: 205px;
+    }
+} 

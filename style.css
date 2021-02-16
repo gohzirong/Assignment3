@@ -113,3 +113,25 @@ transition: 2s;
 html {
   overflow-x: hidden;
 }
+
+/* Web responsiveness */
+/* Small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    img.d-block {
+      width: 510px;
+    }
+}
+  
+/* Medium devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+    img.d-block {
+      width: 530px;
+    }
+}
+
+/* Large devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    img.d-block {
+      width: 270px;
+    }
+} 
