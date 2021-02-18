@@ -1,5 +1,5 @@
 # Assignment-3
-## A Lesson About Covid-19 (insert github link)
+## A Lesson About Covid-19 (https://gohzirong.github.io/ID_Covid19_Website/)
 
 ### User intent:
 1. Give a quick lesson on Covid-19
