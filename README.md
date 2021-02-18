@@ -30,7 +30,6 @@ Charts on Covid-19 Data | - | Yes
 Lesson Slideshow | - | Yes
 Quiz Page | - | Yes
 Lottie Animations | - | Yes
-Storing Quiz Marks | - | Yes
 Game page | - | Yes
 
 &nbsp;
