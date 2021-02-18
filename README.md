@@ -73,3 +73,27 @@ Covid-19 information | https://www.ucihealth.org/blog/2020/04/why-is-covid19-so-
 Carousel | https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_carousel2&stacked=h
 Snake game | https://codepen.io/CaioPaiola/pen/GFpuK
 Breakout game | https://jsfiddle.net/raymondjplante/dfh2tpu1/
+
+&nbsp;
+### Pictures of website
+1. Main Page (index.html)
+![](https://i.ibb.co/gt09xZT/covid-1.png)
+![](https://i.ibb.co/S33zcHq/covid-2.png)
+![](https://i.ibb.co/RTW249t/covid-3.png)
+2. Lesson Page (lesson.html)
+![](https://i.ibb.co/cFWNXhg/covid-4.png)
+![](https://i.ibb.co/MZtt768/covid-5.png)
+![](https://i.ibb.co/cQkPscD/covid-6.png)
+![](https://i.ibb.co/2KjBHyt/covid-7.png)
+![](https://i.ibb.co/rHqFYgs/covid-8.png)
+![](https://i.ibb.co/p2Y9qtH/covid-9.png)
+3. Game Page (game.html)
+![](https://i.ibb.co/WGxg0kp/covid-10.png)
+![](https://i.ibb.co/dmbDR76/covid-11.png)
+4. Quiz Page (quiz.html)
+![](https://i.ibb.co/YfQsghF/covid-12.png)
+![](https://i.ibb.co/P6kCHjk/covid-14.png)
+![](https://i.ibb.co/kXhdnqQ/covid-15.png)
+![](https://i.ibb.co/WsgMHFv/covid-16.png)
+Mid-way animation
+![](https://i.ibb.co/xFvQ6Lf/covid-13.png)
