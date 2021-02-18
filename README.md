@@ -17,9 +17,8 @@
 &nbsp;
 ### Concepts Applied:
 1. Web API
-2. Localstorage
-3. Charts.js
-4. Lottie Animations
+2. Charts.js
+3. Lottie Animations
 
 &nbsp;
 ### Potential Additions:
@@ -30,7 +29,7 @@ Api Implementation | - | Yes
 Charts on Covid-19 Data | - | Yes
 Lesson Slideshow | - | Yes
 Quiz Page | - | Yes
-Lottie Animations | - | No
+Lottie Animations | - | Yes
 Storing Quiz Marks | - | Yes
 Game page | - | Yes
 
@@ -47,9 +46,9 @@ Game page | - | Yes
 ### Website Responsiveness:
 Devices | Done?
 ------------ | ------------- | 
-Small devices | No 
-Medium devices | No 
-Large devices | No
+Small devices | Yes
+Medium devices | Yes
+Large devices | Yes
 
 &nbsp;
 ### Api Referenced:
